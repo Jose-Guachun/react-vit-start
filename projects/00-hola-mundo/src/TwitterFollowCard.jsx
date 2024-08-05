@@ -24,5 +24,6 @@ export function TwiterFollowCard({formatUsername, userName, children, name=' Sin
         <button className="tw-followCard-button">Seguir</button>
       </aside>
     </article>
+    
   );
 }
