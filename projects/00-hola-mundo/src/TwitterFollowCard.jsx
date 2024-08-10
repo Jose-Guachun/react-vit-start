@@ -1,10 +1,13 @@
 import { useState } from 'react'
 export function TwiterFollowCard({formatUsername,userName,children,name = " Sin parametro enviado", initialIsFollowing
 }) {
-  const [isFollowing, setIsFollowing]=useState(initialIsFollowing)
   // Las props tiene que ser inmutables es decir no se las tiene que modificar al momento que entra
   // Se puede modificar pero no se debe hacer, lo que se podria hacer es crear una constante
   // ejemplo: userNameFormat=@{userName}
+
+  // Se puede utilizar el hook useState para modificar el valor de una prop
+  const [isFollowing, setIsFollowing]=useState(initialIsFollowing)
+
   // Forma de enviar nombre de imagen ndinamicamente
   //   const imageSrc = `https://sga.unemi.edu.ec/media/fotos/2022/09/30/${username}`;
   const imageSrc = `https://sga.unemi.edu.ec/media/fotos/2022/09/30/foto_2022930144111.jpg`;
